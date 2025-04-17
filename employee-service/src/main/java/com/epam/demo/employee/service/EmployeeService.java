@@ -16,7 +16,7 @@ public class EmployeeService {
     }
 
     public EmployeeWithDepartmentDto getEmployeeWithDepartment(Long employeeId) {
-        // Fake Employee for now (replace with real DB later)
+
         Employee emp = new Employee(employeeId, "IT-001", "john.doe@epam.com", "Doe", "John");
 
         DepartmentDto department = departmentClient.getDepartmentByCode(emp.getDepartmentCode());
